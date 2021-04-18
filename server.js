@@ -1,4 +1,13 @@
 const inquirer = require('inquirer')
+const {
+  allDepartments,
+  allRoles,
+  allEmployees,
+  addADepartment,
+  addARole,
+  addAnEmployee,
+  updateAnEmployeeRole,
+} = require("./lib/index");
 const Choice = require('inquirer/lib/objects/choice')
 
 
