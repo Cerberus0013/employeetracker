@@ -8,7 +8,12 @@ class DB {
       return this.connection.query("SELECT * FROM department");
   }
   allRoles(){
-      
+      return this.connection.query("SELECT * FROM role");
+
+  }
+
+  allEmployees(){
+      return this.connection.query("SELECT * FROM employee");
   }
 }
 
