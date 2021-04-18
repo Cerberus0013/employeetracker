@@ -1,2 +1,2 @@
-CREATE DATABASE employeeChart;
-USE employeeChart;
+CREATE DATABASE employeeDirectory;
+USE employeeDirectory;
