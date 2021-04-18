@@ -6,7 +6,7 @@ const {
   addADepartment,
   addARole,
   addAnEmployee,
-  updateAnEmployeeRole,
+  //updateAnEmployeeRole,
 } = require("./lib/index");
 const Choice = require('inquirer/lib/objects/choice')
 
@@ -41,12 +41,12 @@ function employeeChartNavigation () {
        } else if(choice.directory === 'add a department'){
           console.log('adding to department')
           
-          //* addADepartment
+          addADepartment()
        } else if(choice.directory === 'add a role'){
 
         console.log('adding a role')
 
-        //*addARole
+        addARole()
        } else if (choice.directory === 'add an employee'){
 
         console.log('adding an employee')
