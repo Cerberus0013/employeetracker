@@ -6,13 +6,13 @@ VALUES ('Human Resources'),
 
 
   INSERT INTO role (title, salary, department_id )
-VALUES('engineer', 5.00, 3),
-('HR', 3.00, 3),
-('custodial', 2.00, 3),
-('mailcleark', 2.00, 3);
+VALUES('Computer Engineer', 5.00, 2),
+('Human Resource clerk', 3.00, 1),
+('Accountant', 2.00, 3),
+('Maintenance Associate', 2.00, 3);
 
   INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES('harry', 'johnson', 1, 3)
-('peter', 'paulson', 3, 1),
-('larry', 'cableson', 2, 2),
-('sally', 'rayson', 1, 3;
+VALUES('harry', 'johnson', 1, NULL),
+('peter', 'paulson', 3, NULL),
+('larry', 'cableson', 2, NULL),
+('sally', 'rayson', 1, NULL);

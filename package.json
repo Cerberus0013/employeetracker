@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Cerberus0013/employeetracker#readme",
   "dependencies": {
     "inquirer": "^8.0.0",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5"
   }
 }
