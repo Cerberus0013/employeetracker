@@ -32,7 +32,8 @@ function employeeChartNavigation() {
       
       if (choice.directory === "view all departments") {
         //console.log("showing all departments");
-        viewDepartments()
+        viewDepartments();
+         //return employeeChartNavigation();
       } else if (choice.directory === "view all roles") {
         //console.log("showing all roles");
         viewRoles()
