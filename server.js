@@ -1,14 +1,14 @@
 const inquirer = require("inquirer");
 const {
   viewDepartments,
-  allRoles,
-  allEmployees,
+  viewRoles,
+  viewEmployees,
   addADepartment,
   addARole,
   addAnEmployee,
   //updateAnEmployeeRole,
 } = require("./lib/index");
-const Choice = require("inquirer/lib/objects/choice");
+const choice = require("inquirer/lib/objects/choice");
 
 function employeeChartNavigation() {
   inquirer
@@ -29,33 +29,57 @@ function employeeChartNavigation() {
       },
     ])
     .then((choice) => {
+      
       if (choice.directory === "view all departments") {
         //console.log("showing all departments");
         viewDepartments()
       } else if (choice.directory === "view all roles") {
         //console.log("showing all roles");
-        allRoles()
+        viewRoles()
       } else if (choice.directory === "view all employees") {
-        console.log("showing all employees");
-
-        //*allEmployees
+        //console.log("showing all employees");
+        viewEmployees()
       } else if (choice.directory === "add a department") {
         //console.log("adding to department");
-
         addADepartment();
       } else if (choice.directory === "add a role") {
         console.log("adding a role");
-
         addARole();
       } else if (choice.directory === "add an employee") {
         //console.log("adding an employee");
-
         addAnEmployee()
-      } else {
+      } else if (choice.directory ===  "update an employee role"){
         console.log("updating employee");
-        unpdateAnEmployeeRole()
+        unpdateAnEmployeeRole(); 
       }
     });
 }
 
 employeeChartNavigation();
+
+// switch(choices){
+
+//   case 1: choice.directory === "view all departments'        
+//         viewDepartments()
+//           break;
+        
+//   case 2:choice.directory === "view all roles";      
+//         viewRoles();
+//         break;
+//   case 3: choice.directory === "view all employees";
+//         viewEmployees();
+//         break;
+//   case 4: choice.directory === "add a department";
+//         addADepartment();
+//         break;
+//   case 5: choice.directory === "add a role";
+//         addARole();
+//         break;
+//   case 6: choice.directory === "add an employee";        
+//         addAnEmployee()
+//         break;
+//   case 7: choice.directory ===  "update an employee role"; 
+//         unpdateAnEmployeeRole()
+//         break;
+//       }
+   
