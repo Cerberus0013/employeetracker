@@ -33,7 +33,7 @@ function employeeChartNavigation() {
       if (choice.directory === "view all departments") {
         //console.log("showing all departments");
         viewDepartments();
-        employeeChartNavigation();
+       ;
          //return employeeChartNavigation();
       } else if (choice.directory === "view all roles") {
         //console.log("showing all roles");
@@ -50,6 +50,7 @@ function employeeChartNavigation() {
       } else if (choice.directory === "add an employee") {
         //console.log("adding an employee");
         addAnEmployee()
+      
       } else if (choice.directory ===  "update an employee role"){
         console.log("updating employee");
         unpdateAnEmployeeRole(); 
