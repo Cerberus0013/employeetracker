@@ -34,8 +34,11 @@ class DB {
       role 
     ) 
   }
-  additionalEmployee(){
-
+  additionalEmployee(employee){
+ return this.connection.query(
+      "INSERT INTO employee SET ?",
+      employee
+    ) 
   }
 
   updateExistingEmployee(){

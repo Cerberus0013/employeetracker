@@ -8,7 +8,7 @@ const {
   addAnEmployee,
   //updateAnEmployeeRole,
 } = require("./lib/index");
-const choice = require("inquirer/lib/objects/choice");
+
 
 function employeeChartNavigation() {
   inquirer
@@ -33,6 +33,7 @@ function employeeChartNavigation() {
       if (choice.directory === "view all departments") {
         //console.log("showing all departments");
         viewDepartments();
+        employeeChartNavigation();
          //return employeeChartNavigation();
       } else if (choice.directory === "view all roles") {
         //console.log("showing all roles");
@@ -44,7 +45,7 @@ function employeeChartNavigation() {
         //console.log("adding to department");
         addADepartment();
       } else if (choice.directory === "add a role") {
-        console.log("adding a role");
+      
         addARole();
       } else if (choice.directory === "add an employee") {
         //console.log("adding an employee");
@@ -57,6 +58,9 @@ function employeeChartNavigation() {
 }
 
 employeeChartNavigation();
+
+
+module.exports = { employeeChartNavigation };
 
 // switch(choices){
 
