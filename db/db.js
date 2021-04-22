@@ -6,6 +6,7 @@ class DB {
   }
   allDepartments() {
     return this.connection.query("SELECT * FROM department");
+    nextAction();
   }
   allRoles() {
     //I am presented with the job title, role id, the department that role belongs to, and the salary for that role
@@ -46,5 +47,8 @@ class DB {
   }
 
 }
+
+
+
 
 module.exports = new DB(connection);
